@@ -18,7 +18,7 @@ use warnings;
 use Regexp::Common qw/net/;
 
 if (@ARGV != 1 ) {
-	print "usage: IP_Extract.pl /path/to/filename\n";
+	print "usage: ipExtract.pl /path/to/filename\n";
 	} else {
 		while (<>) {
 		  print $1, "\n" if /($RE{net}{IPv4})/;
